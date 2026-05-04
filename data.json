@@ -1,9 +1,1 @@
-[
-    {
-        "tag": "Motion",
-        "image": "https://i.postimg.cc/LXVjDqL5/file-00000000d60c71fab24ead2ea8b7bcbf.png",
-        "prompt": "[Use the uploaded face image as the PRIMARY identity reference]\n\nHigh-end cinematic fashion poster of the SAME person walking in an urban architectural environment.\n\nIDENTITY (HIGH PRIORITY):\nPreserve facial identity from reference image.\nSame face structure, beard, eyes, nose, lips.\nKeep natural look (no distortion, no over-stylizing).\nFace can be partially visible (side angle / downward look).\n\nPOSE & MOTION:\nFull body walking pose.\nHead slightly down, relaxed confident walk.\nCreate motion trail effect \u2014 multiple faded clones behind the subject showing walking movement.\n\nSTYLING:\nModern streetwear outfit:\nLoose white shirt (similar to reference style),\nWide grey trousers,\nCasual sneakers.\nNatural fabric folds and realistic texture.\n\nENVIRONMENT:\nModern building exterior with textured walls.\nGlass structure / metal beams.\nPatterned wall panel on one side.\nUrban luxury vibe.\n\nLIGHTING:\nGolden hour sunlight.\nWarm tones, cinematic shadows.\nLong shadows on ground.\n\nCAMERA & COMPOSITION:\nLow angle slightly behind perspective.\nFull body shot.\nStrong depth and perspective lines.\n\nMOTION EFFECT (IMPORTANT):\n3\u20134 ghosted silhouettes trailing behind the subject.\nTransparent motion blur clones fading backward.\n\nPOSTER DESIGN:\nLarge bold typography at top: \"MOTION\"\nClean modern font.\nSmall subtitle text below:\n\"SPRING / SUMMER 2025\"\nMinimal branding text.\n\nCINEMATIC LOOK:\nHigh contrast,\nSharp details,\nSlight film grain,\nProfessional fashion magazine quality.\n\nREALISM:\nUltra realistic,\nNo AI artifacts,\nNatural proportions.\n\n--ar 9:16 --v 6 --style raw --q 2 --s 150 --iw 2",
-        "status": "featured",
-        "id": "4"
-    }
-]
+[]
