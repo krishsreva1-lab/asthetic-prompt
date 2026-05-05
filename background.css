@@ -1,0 +1,350 @@
+:root {
+    --bg-color: #08080a;
+    --color1: 18, 113, 255; 
+    --color2: 221, 74, 255; 
+    --color3: 100, 220, 255; 
+    --color4: 200, 50, 50;   
+    --color5: 180, 180, 50;  
+    --circle-size: 80%;
+    --blending: hard-light;
+}
+
+.gradient-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: linear-gradient(40deg, rgb(10, 10, 15), rgb(0, 0, 0));
+    z-index: -1;
+}
+
+.gradient-bg svg {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+.gradients-container {
+    filter: url(#goo) blur(40px);
+    width: 100%;
+    height: 100%;
+}
+
+.g1, .g2, .g3, .g4, .g5 {
+    position: absolute;
+    mix-blend-mode: var(--blending);
+    width: var(--circle-size);
+    height: var(--circle-size);
+    opacity: 1;
+}
+
+@keyframes moveVertical { 0% { transform: translateY(-50%); } 50% { transform: translateY(50%); } 100% { transform: translateY(-50%); } }
+@keyframes moveInCircle { 0% { transform: rotate(0deg); } 50% { transform: rotate(180deg); } 100% { transform: rotate(360deg); } }
+@keyframes moveHorizontal { 0% { transform: translateX(-50%) translateY(-10%); } 50% { transform: translateX(50%) translateY(10%); } 100% { transform: translateX(-50%) translateY(-10%); } }
+
+.g1 { background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat; top: calc(50% - var(--circle-size) / 2); left: calc(50% - var(--circle-size) / 2); transform-origin: center center; animation: moveVertical 30s ease infinite; }
+.g2 { background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat; top: calc(50% - var(--circle-size) / 2); left: calc(50% - var(--circle-size) / 2); transform-origin: calc(50% - 400px); animation: moveInCircle 20s linear infinite; }
+.g3 { background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat; top: calc(50% - var(--circle-size) / 2 + 200px); left: calc(50% - var(--circle-size) / 2 - 500px); transform-origin: calc(50% + 400px); animation: moveInCircle 40s linear infinite; opacity: 0.7; }
+.g4 { background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat; top: calc(50% - var(--circle-size) / 2); left: calc(50% - var(--circle-size) / 2); transform-origin: calc(50% - 200px); animation: moveHorizontal 40s ease infinite; opacity: 0.5; }
+.g5 { background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat; width: calc(var(--circle-size) * 2); height: calc(var(--circle-size) * 2); top: calc(50% - var(--circle-size)); left: calc(50% - var(--circle-size)); transform-origin: calc(50% - 800px) calc(50% + 200px); animation: moveInCircle 20s ease infinite; }
+:root {
+    --text-main: #ffffff;
+    --text-dim: rgba(255, 255, 255, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.ui-wrapper {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+    background: linear-gradient(to right, #fff, rgba(255,255,255,0.4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.liquid-glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.search-container {
+    display: flex;
+    border-radius: 50px;
+    padding: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-container input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.search-container input::placeholder { color: rgba(255,255,255,0.3); }
+
+.search-btn {
+    border-radius: 50px;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+.search-btn:hover { background: rgba(255,255,255,0.1); }
+
+.prompt-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Forces exactly 2 columns */
+    gap: 15px; /* Smaller gap for tighter 2x2 look */
+    width: 100%;
+    max-width: 800px; /* Limits width so images don't get too huge */
+    padding-bottom: 50px;
+}
+
+/* On mobile, keep it 2x2 or switch to 1 column if it's too small */
+@media (max-width: 500px) {
+    .prompt-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Adjust card height for the homepage */
+.glass-card {
+    margin-bottom: 0; /* Grid handles spacing now */
+}
+
+
+.glass-card {
+    background: rgba(10, 10, 12, 0.4); 
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 20px; 
+    break-inside: avoid; 
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.glass-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 20px 40px rgba(221, 74, 255, 0.15); 
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 16px 16px 16px 16px;
+}
+
+.image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto; 
+    display: block;
+}
+
+.glass-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-main);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
+
+.card-content {
+    padding: 10px 12px;
+}
+
+.card-content h3 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    letter-spacing: -0.02rem;
+}
+
+.blur-text {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+    filter: blur(6px); 
+    user-select: none;
+    transition: filter 0.5s ease;
+    background: rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.liquid-glass-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.liquid-glass-btn:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 15px rgba(18, 113, 255, 0.3);
+}
+
+.liquid-glass-btn:active {
+    transform: scale(0.98);
+}
+/* Ensure the grid stays in a tight 2x2 */
+.prompt-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px; /* Space before button */
+}
+
+/* Center the View All button */
+.action-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px; /* Space before description */
+}
+
+.view-all-btn {
+    max-width: 280px;
+    background: rgba(255, 255, 255, 0.1) !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Detailed Description at the bottom */
+.about-section {
+    width: 100%;
+    max-width: 800px;
+    padding-bottom: 100px; /* Final padding at bottom of page */
+}
+
+.description-box {
+    padding: 40px;
+    text-align: center;
+}
+
+.description-box h2 {
+    margin-bottom: 20px;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.2rem;
+}
+
+.description-box p {
+    color: var(--text-dim);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    margin-top: 30px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+.category-tabs {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tab {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.tab.active, .tab:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
