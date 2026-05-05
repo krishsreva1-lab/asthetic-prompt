@@ -22,7 +22,7 @@
     },
     {
         "tag": "Photograph ",
-        "image": "https://i.postimg.cc/02n5v0MR/file-0000000032f87207ac1aef56e54e196a.png",
+        "image": "https://i.postimg.cc/N0v3VkZs/file-0000000032f87207ac1aef56e54e196a.png",
         "prompt": "[Use uploaded image as pose and composition reference]\n\nUltra-realistic cinematic portrait of a young man standing in tall wild grass during blue hour (evening), holding a professional DSLR camera with a large telephoto lens up to his face, as if capturing a shot.\n\nPOSE & ACTION:\nNatural standing pose in field.\nBoth hands holding camera near eye level.\nFocused expression, looking through the camera viewfinder.\nUpper body slightly turned.\n\nSTYLING:\nCasual outfit:\nOlive green overshirt/jacket,\nPlain white t-shirt underneath,\nDark pants.\nNatural fabric folds and realistic texture.\n\nENVIRONMENT:\nOutdoor grassy field with tall wild grass in foreground (some grass slightly blurred crossing the frame).\nBackground softly blurred with warm circular bokeh lights (distant street or city lights).\n\nLIGHTING:\nSoft natural evening light (blue hour).\nBalanced cool ambient tones + warm bokeh highlights.\nSubtle cinematic contrast.\n\nCAMERA STYLE:\n85mm lens look.\nVery shallow depth of field (f/1.8).\nSharp focus on subject.\nForeground blur + creamy background bokeh.\n\nCOMPOSITION:\nSubject centered or slightly off-center.\nForeground grass creating depth layers.\nPortrait framing (social media ready).\n\nREALISM:\nPhotorealistic,\nNo AI artifacts,\nNatural skin texture,\nNo distortion.\n\nSTYLE:\nCinematic photography,\nSoft color grading,\nSlight film look,\nProfessional DSLR quality.\n\n--ar 4:5 --v 6 --style raw --q 2 --s 100",
         "status": "featured",
         "id": "5"
