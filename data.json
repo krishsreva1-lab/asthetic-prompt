@@ -49,15 +49,6 @@
         "id": "8"
     },
     {
-        "tag": "Editorial Grace",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=55081&nologo=true&model=flux",
-        "prompt": "",
-        "status": "featured",
-        "id": "9",
-        "slot": "1",
-        "generated_at": "2026-05-09T09:52:30.625Z"
-    },
-    {
         "tag": "Cosmic Edit",
         "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=9762&nologo=true&model=flux",
         "prompt": "",
