@@ -1,0 +1,67 @@
+# ============================================================
+# AESTHETIX — GitHub Actions Agent Scheduler
+# File: .github/workflows/agents.yml
+# ============================================================
+
+name: AESTHETIX AI Agents
+
+on:
+  # ── 3 SCHEDULES (UTC times — adjust to your timezone) ──
+  # If you're in IST (India), UTC = IST - 5:30
+  # 8:00 AM IST  = 2:30 AM UTC
+  # 1:00 PM IST  = 7:30 AM UTC
+  # 7:00 PM IST  = 1:30 PM UTC
+
+  schedule:
+    - cron: "30 2 * * *"   # Slot 1 — 8:00 AM IST
+    - cron: "30 7 * * *"   # Slot 2 — 1:00 PM IST
+    - cron: "30 13 * * *"  # Slot 3 — 7:00 PM IST
+
+  # ── Manual trigger from GitHub Actions tab ──
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Which prompt slot to run (1, 2, or 3)"
+        required: true
+        default: "1"
+        type: choice
+        options: ["1", "2", "3"]
+
+jobs:
+  run-agents:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install node-fetch dotenv
+
+      - name: Determine prompt slot
+        id: slot
+        run: |
+          # Auto-detect slot from cron schedule time
+          HOUR=$(date -u +"%H")
+          MINUTE=$(date -u +"%M")
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "PROMPT_SLOT=${{ github.event.inputs.slot }}" >> $GITHUB_ENV
+          elif [ "$HOUR" = "02" ]; then
+            echo "PROMPT_SLOT=1" >> $GITHUB_ENV
+          elif [ "$HOUR" = "07" ]; then
+            echo "PROMPT_SLOT=2" >> $GITHUB_ENV
+          else
+            echo "PROMPT_SLOT=3" >> $GITHUB_ENV
+          fi
+
+      - name: Run AI Agents
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.AGENT_GITHUB_TOKEN }}
+          PROMPT_SLOT: ${{ env.PROMPT_SLOT }}
+        run: node agent.js
