@@ -54,14 +54,5 @@
         "prompt": "Ultra-accurate minimalist surreal editorial fashion poster based on the uploaded reference image.\n\nA haunting conceptual magazine-cover portrait in monochrome grayscale, featuring the SAME facial structure, hairstyle silhouette, and composition balance as the uploaded reference image. The subject is centered perfectly in a vertical 4:5 editorial poster layout, photographed with an 85mm lens aesthetic and shallow depth of field.\n\nThe entire face is partially concealed behind multiple horizontal fragmented distortion slices made of frosted textured glass. The glass strips cut across the portrait unevenly, creating layered displacement and blurred refraction effects. Eyes are mostly obscured by the distortion, while only the lips, jawline, and partial nose remain subtly visible through the fragmented transparency.\n\nShort cinematic bob haircut with soft wind-swept strands flowing naturally across the face. Expression is neutral, detached, emotionally distant, and mysterious. No smile. Minimal visible skin detail. Feminine editorial beauty aesthetic with quiet melancholy.\n\nTop center contains large elegant white serif typography reading:\n“LOST”\n\nRight side includes thin vertical editorial date typography in minimalist fashion-magazine style.\n\nBottom section contains a bold condensed motivational quote in clean editorial spacing:\n“YOU MUST LOSE YOURSELF TO FIND WHO YOU ARE.”\n\nVisual style:\n– Luxury fashion editorial cover\n– Experimental graphic design\n– Identity-loss concept art\n– Moody cinematic atmosphere\n– Matte monochrome finish\n– Frosted glass texture overlays\n– Soft film grain\n– Layered blur displacement\n– Slight motion blur only inside distortion strips\n– Ultra-clean grayscale gradients\n– High contrast black hair against pale gray background\n\nLighting:\n– Soft diffused studio lighting\n– Gentle shadows\n– Low skin contrast\n– Pale gray seamless backdrop with soft vignette\n\nComposition must remain minimal, centered, emotionally powerful, and poster-quality realistic.\n\nAvoid:\n– Color tones\n– AI artifacts\n– Extra objects\n– Over-detailed skin\n– Sharp visible eyes\n– Busy background\n– Cartoon/anime appearance\n– Overexposed highlights\n\nRendering quality:\nultra realistic, high-fashion editorial, conceptual luxury magazine cover, cinematic monochrome photography, premium poster design, abstract emotional portrait, surreal identity distortion\n\n--ar 4:5 --style raw --v 6 --s 250 --q 2",
         "status": "featured",
         "id": "9"
-    },
-    {
-        "tag": "Street Oracle",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=89923&nologo=true&model=flux",
-        "prompt": "",
-        "status": "draft",
-        "id": "10",
-        "slot": "3",
-        "generated_at": "2026-05-10T05:49:09.913Z"
     }
 ]
