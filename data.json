@@ -124,5 +124,14 @@
         "id": "20",
         "slot": "3",
         "generated_at": "2026-05-13T10:04:29.609Z"
+    },
+    {
+        "tag": "Raw Energy",
+        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=52803&nologo=true&model=flux",
+        "prompt": "",
+        "status": "draft",
+        "id": "21",
+        "slot": "3",
+        "generated_at": "2026-05-13T16:04:10.361Z"
     }
 ]
