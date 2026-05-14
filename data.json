@@ -151,5 +151,14 @@
         "id": "23",
         "slot": "3",
         "generated_at": "2026-05-14T09:56:00.948Z"
+    },
+    {
+        "tag": "Night Vision",
+        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=42320&nologo=true&model=flux",
+        "prompt": "",
+        "status": "draft",
+        "id": "24",
+        "slot": "3",
+        "generated_at": "2026-05-14T15:42:10.547Z"
     }
 ]
