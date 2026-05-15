@@ -63,22 +63,13 @@
         "id": "11"
     },
     {
-        "tag": "Dark Matter",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=26178&nologo=true&model=flux",
+        "tag": "Phantom Light",
+        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=80254&nologo=true&model=flux",
         "prompt": "",
         "status": "draft",
-        "id": "18",
+        "id": "19",
         "slot": "3",
-        "generated_at": "2026-05-12T16:03:27.534Z"
-    },
-    {
-        "tag": "Editorial Grace",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=89807&nologo=true&model=flux",
-        "prompt": "",
-        "status": "draft",
-        "id": "20",
-        "slot": "3",
-        "generated_at": "2026-05-13T10:04:29.609Z"
+        "generated_at": "2026-05-13T06:02:59.052Z"
     },
     {
         "tag": "Night Vision",
