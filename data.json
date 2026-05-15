@@ -99,15 +99,6 @@
         "generated_at": "2026-05-14T06:02:18.190Z"
     },
     {
-        "tag": "Silent Power",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=60881&nologo=true&model=flux",
-        "prompt": "",
-        "status": "draft",
-        "id": "23",
-        "slot": "3",
-        "generated_at": "2026-05-14T09:56:00.948Z"
-    },
-    {
         "tag": "Night Vision",
         "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=42320&nologo=true&model=flux",
         "prompt": "",
