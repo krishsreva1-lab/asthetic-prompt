@@ -115,14 +115,5 @@
         "id": "24",
         "slot": "3",
         "generated_at": "2026-05-14T15:42:10.547Z"
-    },
-    {
-        "tag": "Golden Hour",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=43730&nologo=true&model=flux",
-        "prompt": "",
-        "status": "draft",
-        "id": "25",
-        "slot": "3",
-        "generated_at": "2026-05-15T06:09:06.473Z"
     }
 ]
