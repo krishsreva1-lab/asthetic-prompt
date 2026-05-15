@@ -81,15 +81,6 @@
         "generated_at": "2026-05-13T06:02:59.052Z"
     },
     {
-        "tag": "Editorial Grace",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=89807&nologo=true&model=flux",
-        "prompt": "",
-        "status": "draft",
-        "id": "20",
-        "slot": "3",
-        "generated_at": "2026-05-13T10:04:29.609Z"
-    },
-    {
         "tag": "Night Vision",
         "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=42320&nologo=true&model=flux",
         "prompt": "",
