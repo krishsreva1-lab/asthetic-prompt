@@ -61,14 +61,5 @@
         "prompt": "Full-body fashion editorial portrait of a young man standing against a vibrant solid red background, tousled black textured curly hair slightly falling over his face, head slightly bowed, hands in pockets; wearing an unbuttoned white lightweight shirt layered over a fitted black t-shirt, oversized high-waisted wide-leg black trousers cinched with a belt, and white chunky sneakers; dramatic high-contrast studio lighting from above and slightly left that sculpts the fabrics and casts soft shadows, sharp detail on hair and clothing textures; artistic motion-glitch effect: the left side of his body and shirt appear horizontally smeared and vertically dripping into the red backdrop like painted streaks, blending realism with surreal distortion; moody cinematic color grading, shallow depth of field with full-figure framing, high-resolution, fashion magazine aesthetic, subtle film grain and studio-refined skin tones.",
         "status": "featured",
         "id": "11"
-    },
-    {
-        "tag": "Night Vision",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=42320&nologo=true&model=flux",
-        "prompt": "",
-        "status": "draft",
-        "id": "24",
-        "slot": "3",
-        "generated_at": "2026-05-14T15:42:10.547Z"
     }
 ]
