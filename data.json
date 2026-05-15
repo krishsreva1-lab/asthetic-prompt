@@ -124,14 +124,5 @@
         "id": "25",
         "slot": "3",
         "generated_at": "2026-05-15T06:09:06.473Z"
-    },
-    {
-        "tag": "Phantom Light",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=34435&nologo=true&model=flux",
-        "prompt": "",
-        "status": "draft",
-        "id": "26",
-        "slot": "3",
-        "generated_at": "2026-05-15T10:02:36.000Z"
     }
 ]
