@@ -90,15 +90,6 @@
         "generated_at": "2026-05-13T10:04:29.609Z"
     },
     {
-        "tag": "Raw Energy",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=89627&nologo=true&model=flux",
-        "prompt": "",
-        "status": "draft",
-        "id": "22",
-        "slot": "3",
-        "generated_at": "2026-05-14T06:02:18.190Z"
-    },
-    {
         "tag": "Night Vision",
         "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=42320&nologo=true&model=flux",
         "prompt": "",
