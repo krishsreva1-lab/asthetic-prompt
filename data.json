@@ -63,15 +63,6 @@
         "id": "11"
     },
     {
-        "tag": "Soft Authority",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=6115&nologo=true&model=flux",
-        "prompt": "",
-        "status": "draft",
-        "id": "17",
-        "slot": "3",
-        "generated_at": "2026-05-12T10:04:46.309Z"
-    },
-    {
         "tag": "Dark Matter",
         "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=26178&nologo=true&model=flux",
         "prompt": "",
