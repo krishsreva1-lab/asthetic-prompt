@@ -70,14 +70,5 @@
         "id": "13",
         "slot": "3",
         "generated_at": "2026-05-16T05:40:22.446Z"
-    },
-    {
-        "tag": "Silent Power",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=50356&nologo=true&model=flux",
-        "prompt": "",
-        "status": "draft",
-        "id": "15",
-        "slot": "3",
-        "generated_at": "2026-05-16T14:40:45.544Z"
     }
 ]
