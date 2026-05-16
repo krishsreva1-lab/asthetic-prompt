@@ -70,5 +70,14 @@
         "id": "12",
         "slot": "3",
         "generated_at": "2026-05-15T15:37:43.083Z"
+    },
+    {
+        "tag": "Urban Legend",
+        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=85664&nologo=true&model=flux",
+        "prompt": "",
+        "status": "draft",
+        "id": "13",
+        "slot": "3",
+        "generated_at": "2026-05-16T05:40:22.446Z"
     }
 ]
