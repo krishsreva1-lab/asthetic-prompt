@@ -81,15 +81,6 @@
         "generated_at": "2026-05-17T14:44:18.005Z"
     },
     {
-        "tag": "Golden Hour",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=61728&nologo=true&model=flux",
-        "prompt": "",
-        "status": "draft",
-        "id": "16",
-        "slot": "3",
-        "generated_at": "2026-05-18T11:30:57.825Z"
-    },
-    {
         "tag": "Neon Drift",
         "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=43345&nologo=true&model=flux",
         "prompt": "",
