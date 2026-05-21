@@ -115,14 +115,5 @@
         "id": "22",
         "slot": "3",
         "generated_at": "2026-05-20T10:34:40.383Z"
-    },
-    {
-        "tag": "Soft Authority",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=76770&nologo=true&model=flux",
-        "prompt": "",
-        "status": "draft",
-        "id": "23",
-        "slot": "3",
-        "generated_at": "2026-05-20T16:36:20.900Z"
     }
 ]
