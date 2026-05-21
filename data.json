@@ -118,15 +118,6 @@
     },
     {
         "tag": "Cosmic Edit",
-        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=4698&nologo=true&model=flux",
-        "prompt": "",
-        "status": "draft",
-        "id": "21",
-        "slot": "3",
-        "generated_at": "2026-05-20T06:32:45.313Z"
-    },
-    {
-        "tag": "Cosmic Edit",
         "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=16170&nologo=true&model=flux",
         "prompt": "",
         "status": "draft",
