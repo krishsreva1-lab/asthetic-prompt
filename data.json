@@ -97,5 +97,14 @@
         "id": "15",
         "slot": "3",
         "generated_at": "2026-05-22T10:33:38.833Z"
+    },
+    {
+        "tag": "Editorial Grace",
+        "image": "https://image.pollinations.ai/prompt/?width=768&height=960&seed=54880&nologo=true&model=flux",
+        "prompt": "",
+        "status": "draft",
+        "id": "16",
+        "slot": "3",
+        "generated_at": "2026-05-22T16:02:38.536Z"
     }
 ]
